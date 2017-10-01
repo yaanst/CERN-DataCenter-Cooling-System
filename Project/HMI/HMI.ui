@@ -1,0 +1,3880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1703</width>
+    <height>942</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolTip">
+   <string>Edit the value to change fan speed</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(240, 240, 240);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="datacenter_ch">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>821</width>
+      <height>801</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <widget class="QPixmapWidget" name="qPixmapWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>391</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/cern_ch.jpg</pixmap>
+     </property>
+     <property name="aspectRatioMode">
+      <enum>Qt::IgnoreAspectRatio</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_vent_ch">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>410</y>
+       <width>801</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="widget_fan00_ch" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>201</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <widget class="QPixmapWidget" name="qPixmapWidget">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>10</y>
+         <width>111</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="pixmap">
+        <pixmap>images/fan.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>0</y>
+         <width>58</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>FAN_00</string>
+       </property>
+      </widget>
+      <widget class="TaurusLabelEditRW" name="taurusLabelEditRW">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>120</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Edit the value to change fan speed</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(198, 255, 212);</string>
+       </property>
+       <property name="model">
+        <string>epfl/vds/1/fan_00</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>57</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Speed at</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>120</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_fan01_ch" native="true">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>50</y>
+        <width>191</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <widget class="QPixmapWidget" name="qPixmapWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>10</y>
+         <width>111</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="pixmap">
+        <pixmap>images/fan.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>0</y>
+         <width>58</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>FAN_01</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>120</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+      <widget class="TaurusLabelEditRW" name="taurusLabelEditRW_2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>120</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Edit the value to change fan speed</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(198, 255, 212);</string>
+       </property>
+       <property name="model">
+        <string>epfl/vds/1/fan_01</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>57</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Speed at</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget_fan02_ch" native="true">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>50</y>
+        <width>181</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <widget class="QPixmapWidget" name="qPixmapWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>10</y>
+         <width>111</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="pixmap">
+        <pixmap>images/fan.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>0</y>
+         <width>58</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>FAN_02</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>120</y>
+         <width>57</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Speed at</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>120</y>
+         <width>16</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+      <widget class="TaurusLabelEditRW" name="taurusLabelEditRW_3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>120</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Edit the value to change fan speed</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(198, 255, 212);</string>
+       </property>
+       <property name="model">
+        <string>epfl/vds/2/fan_02</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="TaurusCommandButton" name="taurusCommandButton_7">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>80</y>
+        <width>121</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(200, 200, 200);</string>
+      </property>
+      <property name="text">
+       <string>100 %</string>
+      </property>
+      <property name="Model">
+       <string>epfl/vds/1</string>
+      </property>
+      <property name="Command">
+       <string>start</string>
+      </property>
+     </widget>
+     <widget class="TaurusCommandButton" name="taurusCommandButton_8">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>150</y>
+        <width>121</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(200, 200, 200);</string>
+      </property>
+      <property name="text">
+       <string>0 %</string>
+      </property>
+      <property name="Model">
+       <string>epfl/vds/1</string>
+      </property>
+      <property name="Command">
+       <string>stop</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>20</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string>Ventilation system</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>130</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Temperature: </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>180</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Humidity:</string>
+     </property>
+    </widget>
+    <widget class="TaurusLed" name="taurusLed_3">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>120</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="ledInverted">
+      <bool>false</bool>
+     </property>
+     <property name="ledPattern" stdset="0">
+      <string>:leds/images256/led_{color}_on.png</string>
+     </property>
+     <property name="model">
+      <string>epfl/vds/2/temp_alarm</string>
+     </property>
+     <property name="onColor">
+      <string>red</string>
+     </property>
+     <property name="offColor">
+      <string>green</string>
+     </property>
+    </widget>
+    <widget class="TaurusLed" name="taurusLed_2">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>170</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="ledInverted">
+      <bool>false</bool>
+     </property>
+     <property name="ledPattern" stdset="0">
+      <string>:leds/images256/led_{color}_on.png</string>
+     </property>
+     <property name="model">
+      <string>epfl/vds/1/hum_alarm</string>
+     </property>
+     <property name="onColor">
+      <string>red</string>
+     </property>
+     <property name="offColor">
+      <string>green</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>220</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Fire:</string>
+     </property>
+    </widget>
+    <widget class="TaurusLed" name="taurusLed_4">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>210</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="ledInverted">
+      <bool>false</bool>
+     </property>
+     <property name="ledPattern" stdset="0">
+      <string>:leds/images256/led_{color}_on.png</string>
+     </property>
+     <property name="model">
+      <string>epfl/vds/2/fire_alarm</string>
+     </property>
+     <property name="onColor">
+      <string>red</string>
+     </property>
+     <property name="offColor">
+      <string>green</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_details_ch">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>330</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(200, 200, 200);</string>
+     </property>
+     <property name="text">
+      <string>Sensors details</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>301</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>22</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>Swiss datacenter</string>
+     </property>
+    </widget>
+    <widget class="TaurusLed" name="taurusLed">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>260</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="ledInverted">
+      <bool>false</bool>
+     </property>
+     <property name="ledPattern" stdset="0">
+      <string>:leds/images256/led_{color}_on.png</string>
+     </property>
+     <property name="model">
+      <string>epfl/vds/1/air_flow_alarm</string>
+     </property>
+     <property name="onColor">
+      <string>red</string>
+     </property>
+     <property name="offColor">
+      <string>green</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>270</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Air flow:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>120</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>(18°C - 27 °C)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>180</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>(20% -80%)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>270</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>(66% - 100%)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="TaurusWidget" name="frame_details_ch">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>640</y>
+      <width>831</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <widget class="QFrame" name="air_details_ch">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>181</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="TaurusLabel" name="taurusLabel_10">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>61</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/air_flow_02</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>air_flow_00:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_11">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>60</y>
+        <width>61</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/air_flow_01</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_12">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>30</y>
+        <width>61</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/air_flow_00</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>air_flow_02:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Air flow sensors:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>air_flow_01:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="temp_details_ch">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>0</y>
+       <width>251</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperature sensors:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_00:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_13">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/temp_00</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_14">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/temp_01</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_01:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_15">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>70</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/temp_02</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_02:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_16">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>90</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/temp_03</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_03:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_17">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>110</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/temp_04</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_04:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_18">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>130</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/temp_05</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_05:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_19">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/temp_06</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_06:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_20">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>50</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/temp_07</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>50</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_07:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_21">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/temp_08</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_38">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>70</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_08:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_22">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>90</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/temp_09</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_39">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>90</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_09:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_23">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>110</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/temp_10</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>110</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_10:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_24">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>130</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/temp_11</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_41">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>130</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_11:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="hum_details_ch">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>0</y>
+       <width>281</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_42">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>0</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humidity sensors:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_43">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_00:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_25">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/hum_00</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_26">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>50</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/hum_01</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_44">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_01:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_27">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>70</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/hum_02</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_45">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_02:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_28">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>90</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/hum_03</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_46">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_03:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_29">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>110</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/hum_04</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_47">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_04:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_30">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>130</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/hum_05</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_48">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_05:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_31">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>30</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/hum_06</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_49">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_06:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_32">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/hum_07</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_50">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_07:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_33">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>70</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/hum_08</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_51">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_08:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_34">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>90</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/hum_09</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_52">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>90</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_09:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_35">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/hum_10</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_53">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_10:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_36">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>130</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/hum_11</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_54">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_11:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fire_details_ch">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>0</y>
+       <width>91</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_55">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fire_00:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_56">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fire_02:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_57">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Fire sensors:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_58">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fire_01:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLed" name="taurusLed_5">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="ledInverted">
+       <bool>false</bool>
+      </property>
+      <property name="ledPattern" stdset="0">
+       <string>:leds/images256/led_{color}_on.png</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/fire_00</string>
+      </property>
+      <property name="onColor">
+       <string>red</string>
+      </property>
+      <property name="offColor">
+       <string>green</string>
+      </property>
+     </widget>
+     <widget class="TaurusLed" name="taurusLed_6">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="ledInverted">
+       <bool>false</bool>
+      </property>
+      <property name="ledPattern" stdset="0">
+       <string>:leds/images256/led_{color}_on.png</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/fire_01</string>
+      </property>
+      <property name="onColor">
+       <string>red</string>
+      </property>
+      <property name="offColor">
+       <string>green</string>
+      </property>
+     </widget>
+     <widget class="TaurusLed" name="taurusLed_7">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>70</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="ledInverted">
+       <bool>false</bool>
+      </property>
+      <property name="ledPattern" stdset="0">
+       <string>:leds/images256/led_{color}_on.png</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/2/fire_02</string>
+      </property>
+      <property name="onColor">
+       <string>red</string>
+      </property>
+      <property name="offColor">
+       <string>green</string>
+      </property>
+     </widget>
+     <widget class="TaurusLed" name="taurusLed_8">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="ledInverted">
+       <bool>false</bool>
+      </property>
+      <property name="ledPattern" stdset="0">
+       <string>:leds/images256/led_{color}_on.png</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/1/fire_03</string>
+      </property>
+      <property name="onColor">
+       <string>red</string>
+      </property>
+      <property name="offColor">
+       <string>green</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_59">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fire_03:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="datacenter_hu">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>0</y>
+      <width>811</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <widget class="QLabel" name="label_63">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>120</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Temperature: </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_64">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>170</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Humidity:</string>
+     </property>
+    </widget>
+    <widget class="TaurusLed" name="taurusLed_9">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>110</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="ledInverted">
+      <bool>false</bool>
+     </property>
+     <property name="ledPattern" stdset="0">
+      <string>:leds/images256/led_{color}_on.png</string>
+     </property>
+     <property name="model">
+      <string>epfl/vds/3/temp_alarm</string>
+     </property>
+     <property name="onColor">
+      <string>red</string>
+     </property>
+     <property name="offColor">
+      <string>green</string>
+     </property>
+    </widget>
+    <widget class="TaurusLed" name="taurusLed_10">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>160</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="ledInverted">
+      <bool>false</bool>
+     </property>
+     <property name="ledPattern" stdset="0">
+      <string>:leds/images256/led_{color}_on.png</string>
+     </property>
+     <property name="model">
+      <string>epfl/vds/3/hum_alarm</string>
+     </property>
+     <property name="onColor">
+      <string>red</string>
+     </property>
+     <property name="offColor">
+      <string>green</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_65">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>210</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Fire:</string>
+     </property>
+    </widget>
+    <widget class="TaurusLed" name="taurusLed_11">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>200</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="ledInverted">
+      <bool>false</bool>
+     </property>
+     <property name="ledPattern" stdset="0">
+      <string>:leds/images256/led_{color}_on.png</string>
+     </property>
+     <property name="model">
+      <string>epfl/vds/3/fire_alarm</string>
+     </property>
+     <property name="onColor">
+      <string>red</string>
+     </property>
+     <property name="offColor">
+      <string>green</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_details_hu">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>340</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(200, 200, 200);</string>
+     </property>
+     <property name="text">
+      <string>Sensors details</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_66">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>381</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>22</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>Hungarian datacenter</string>
+     </property>
+    </widget>
+    <widget class="TaurusLed" name="taurusLed_12">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>250</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="ledInverted">
+      <bool>false</bool>
+     </property>
+     <property name="ledPattern" stdset="0">
+      <string>:leds/images256/led_{color}_on.png</string>
+     </property>
+     <property name="model">
+      <string>epfl/vds/3/air_flow_alarm</string>
+     </property>
+     <property name="onColor">
+      <string>red</string>
+     </property>
+     <property name="offColor">
+      <string>green</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_67">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>260</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Air flow:</string>
+     </property>
+    </widget>
+    <widget class="QPixmapWidget" name="qPixmapWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>411</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/cern_hu.jpg</pixmap>
+     </property>
+     <property name="aspectRatioMode">
+      <enum>Qt::IgnoreAspectRatio</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>170</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>(20% -80%)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>260</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>(66% - 100%)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>110</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>(18°C - 27 °C)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="TaurusWidget" name="frame_details_hu">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>470</y>
+      <width>831</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <widget class="QFrame" name="air_details_hu">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>171</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="TaurusLabel" name="taurusLabel_37">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>61</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/air_flow_02</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_68">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>air_flow_00:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_38">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>60</y>
+        <width>61</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/air_flow_01</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_39">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>30</y>
+        <width>61</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/air_flow_00</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_69">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>air_flow_02:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_70">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Air flow sensors:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_71">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>air_flow_01:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="temp_details_hu">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>0</y>
+       <width>251</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_72">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Temperature sensors:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_73">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_00:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_40">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_00</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_41">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_01</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_74">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_01:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_42">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>70</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_02</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_75">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_02:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_43">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>90</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_03</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_76">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_03:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_44">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>110</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_04</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_77">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_04:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_45">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>130</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_05</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_78">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_05:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_46">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_06</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_79">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_06:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_47">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>50</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_07</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_80">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>50</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_07:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_48">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>70</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_08</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_81">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>70</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_08:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_49">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>90</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_09</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_82">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>90</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_09:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_50">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>110</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_10</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_83">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>110</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_10:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_51">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>130</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99C</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/temp_11</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>C</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_84">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>130</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>temp_11:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="hum_details_hu">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>0</y>
+       <width>271</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_85">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>0</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Humidity sensors:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_86">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_00:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_52">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_00</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_53">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>50</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_01</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_87">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_01:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_54">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>70</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_02</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_88">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_02:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_55">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>90</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_03</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_89">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_03:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_56">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>110</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_04</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_90">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_04:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_57">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>130</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_05</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_91">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_05:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_58">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>30</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_06</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_92">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_06:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_59">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_07</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_93">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_07:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_60">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>70</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_08</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_94">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_08:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_61">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>90</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_09</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_95">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>90</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_09:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_62">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_10</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_96">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_10:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_63">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>130</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="text">
+       <string> 99.99%</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/hum_11</string>
+      </property>
+      <property name="prefixText">
+       <string/>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_97">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hum_11:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fire_details_hu">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>0</y>
+       <width>91</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_98">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fire_00:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_99">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fire_02:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_100">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Fire sensors:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_101">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fire_01:</string>
+      </property>
+     </widget>
+     <widget class="TaurusLed" name="taurusLed_13">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="ledInverted">
+       <bool>false</bool>
+      </property>
+      <property name="ledPattern" stdset="0">
+       <string>:leds/images256/led_{color}_on.png</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/fire_00</string>
+      </property>
+      <property name="onColor">
+       <string>red</string>
+      </property>
+      <property name="offColor">
+       <string>green</string>
+      </property>
+     </widget>
+     <widget class="TaurusLed" name="taurusLed_14">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="ledInverted">
+       <bool>false</bool>
+      </property>
+      <property name="ledPattern" stdset="0">
+       <string>:leds/images256/led_{color}_on.png</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/fire_01</string>
+      </property>
+      <property name="onColor">
+       <string>red</string>
+      </property>
+      <property name="offColor">
+       <string>green</string>
+      </property>
+     </widget>
+     <widget class="TaurusLed" name="taurusLed_15">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>70</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="ledInverted">
+       <bool>false</bool>
+      </property>
+      <property name="ledPattern" stdset="0">
+       <string>:leds/images256/led_{color}_on.png</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/fire_02</string>
+      </property>
+      <property name="onColor">
+       <string>red</string>
+      </property>
+      <property name="offColor">
+       <string>green</string>
+      </property>
+     </widget>
+     <widget class="TaurusLed" name="taurusLed_16">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="ledInverted">
+       <bool>false</bool>
+      </property>
+      <property name="ledPattern" stdset="0">
+       <string>:leds/images256/led_{color}_on.png</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/fire_03</string>
+      </property>
+      <property name="onColor">
+       <string>red</string>
+      </property>
+      <property name="offColor">
+       <string>green</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_102">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fire_03:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>261</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="TaurusLabel" name="taurusLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/fan_00</string>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/fan_01</string>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="TaurusLabel" name="taurusLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>50</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(198, 255, 212);</string>
+      </property>
+      <property name="model">
+       <string>epfl/vds/3/fan_02</string>
+      </property>
+      <property name="suffixText">
+       <string>%</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_103">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>0</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="text">
+       <string>Fan sensors:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fan_00:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>30</y>
+        <width>57</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fan_01:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>30</y>
+        <width>57</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>fan_02:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1703</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TaurusLabelEditRW</class>
+   <extends>TaurusReadWriteSwitcher</extends>
+   <header>taurus.qt.qtgui.compact</header>
+  </customwidget>
+  <customwidget>
+   <class>TaurusWidget</class>
+   <extends>QWidget</extends>
+   <header>taurus.qt.qtgui.container</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TaurusLabel</class>
+   <extends>QLabel</extends>
+   <header>taurus.qt.qtgui.display</header>
+  </customwidget>
+  <customwidget>
+   <class>TaurusReadWriteSwitcher</class>
+   <extends>TaurusWidget</extends>
+   <header>taurus.qt.qtgui.compact</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>TaurusCommandButton</class>
+   <extends>QPushButton</extends>
+   <header>taurus.qt.qtgui.button</header>
+  </customwidget>
+  <customwidget>
+   <class>TaurusLed</class>
+   <extends>QLed</extends>
+   <header>taurus.qt.qtgui.display</header>
+  </customwidget>
+  <customwidget>
+   <class>QLed</class>
+   <extends>QPixmapWidget</extends>
+   <header>taurus.qt.qtgui.display</header>
+  </customwidget>
+  <customwidget>
+   <class>QPixmapWidget</class>
+   <extends>QWidget</extends>
+   <header>taurus.qt.qtgui.display</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_details_ch</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>frame_details_ch</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>725</x>
+     <y>240</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1045</x>
+     <y>335</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_details_hu</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>frame_details_hu</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1520</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1265</x>
+     <y>575</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
