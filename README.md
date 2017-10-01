@@ -10,3 +10,6 @@ The following points had to be done:
 - Perform a cost estimation
 
 See the *Project-2017-DataCenter-description.pdf* file for more detailed information.
+
+## Depedencies
+You need the [Tango virtual machine](http://www.tango-controls.org/downloads/virtual-machine/) to be able to run the project. See *Project/README.md* for more information.
