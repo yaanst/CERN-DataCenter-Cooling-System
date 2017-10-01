@@ -13,6 +13,7 @@ Execute "./start.sh stop" to stop everything.
 The sensors values for the Hungarian data center are all managed with the Python class.
 
 The following files store the sensors/actuators' values for the Swiss data center. Each line corresponds to a different sensor/actuator:
+
 `tmp/datacenter_temp.sensors`
 | Line   | Sensor     |
 |:------:|:-----------|
